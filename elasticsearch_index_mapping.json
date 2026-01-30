@@ -1,0 +1,44 @@
+{
+  "mappings": {
+    "properties": {
+      "observation_id": {
+        "type": "keyword"
+      },
+      "patient_id": {
+        "type": "keyword"
+      },
+      "patient_name": {
+        "type": "text"
+      },
+      "systolic_pressure": {
+        "type": "integer"
+      },
+      "diastolic_pressure": {
+        "type": "integer"
+      },
+      "category": {
+        "type": "keyword"
+      },
+      "severity": {
+        "type": "keyword"
+      },
+      "anomalies": {
+        "type": "keyword"
+      },
+      "effectiveDateTime": {
+        "type": "date"
+      },
+      "processed_datetime": {
+        "type": "date"
+      },
+      "fhir_resource": {
+        "type": "object",
+        "enabled": false
+      }
+    }
+  },
+  "settings": {
+    "number_of_shards": 1,
+    "number_of_replicas": 0
+  }
+}

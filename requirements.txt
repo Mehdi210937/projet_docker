@@ -1,0 +1,14 @@
+# Kafka (kafka-python-ng pour compatibilité Python 3.13+)
+kafka-python-ng==2.2.2
+
+# Elasticsearch
+elasticsearch==8.11.0
+
+# FHIR
+fhir.resources==7.1.0
+
+# Génération de données
+faker==22.0.0
+
+# Utilitaires
+python-dateutil==2.8.2

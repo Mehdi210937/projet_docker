@@ -1,0 +1,24 @@
+{
+  "topic_name": "blood-pressure-observations",
+  "description": "Topic Kafka pour les observations FHIR de pression arterielle",
+  "configuration": {
+    "partitions": 3,
+    "replication_factor": 1,
+    "retention_ms": 604800000,
+    "compression_type": "gzip",
+    "max_message_bytes": 1048576
+  },
+  "auto_create": true,
+  "producer_config": {
+    "bootstrap_servers": "localhost:9092",
+    "value_serializer": "json",
+    "acks": "all",
+    "retries": 3
+  },
+  "consumer_config": {
+    "bootstrap_servers": "localhost:9092",
+    "group_id": "blood-pressure-consumer-group",
+    "auto_offset_reset": "earliest",
+    "enable_auto_commit": true
+  }
+}
